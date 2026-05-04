@@ -6,7 +6,7 @@ package it.unipd.mtss;
 
 public class IntegerToRoman {
     public static String convert(int number){
-        if (number < 1 || number > 3) {
+        if (number < 1 || number > 9) {
             return null; 
         }
         
