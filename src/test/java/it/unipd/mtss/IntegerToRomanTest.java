@@ -25,13 +25,13 @@ public class IntegerToRomanTest {
     }
 
     @Test
-    void testConvertCinque() {
-    assertEquals("V", IntegerToRoman.convert(5));
+    void testConvertQuattro() {
+    assertEquals("IV", IntegerToRoman.convert(4));
     }
 
     @Test
-    void testConvertSette() {
-    assertEquals("VII", IntegerToRoman.convert(7));
+    void testConvertCinque() {
+    assertEquals("V", IntegerToRoman.convert(5));
     }
 
     @Test
@@ -40,7 +40,7 @@ public class IntegerToRomanTest {
     }
 
     @Test
-    void testConvertUndici() {
-    assertEquals("XI", IntegerToRoman.convert(11));
+    void testConvertSei() {
+    assertEquals("VI", IntegerToRoman.convert(6));
     }
 }
