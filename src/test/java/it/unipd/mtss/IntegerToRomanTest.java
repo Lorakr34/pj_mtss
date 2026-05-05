@@ -10,65 +10,47 @@ import org.junit.jupiter.api.Test;
 public class IntegerToRomanTest {
 
     @Test
-    void testConvertUno() {
-        int input = 1;
-        
-        String result = IntegerToRoman.convert(input);
-        
-        assertEquals("I", result);
+    void test1() {
+        assertEquals(“I”, IntegerToRoman.convert(1));
     }
 
     @Test
-    void testConvertTre() {
-        int input = 3;
-        
-        String result = IntegerToRoman.convert(input);
-        
-        assertEquals("III", result);
+    void test4() {
+        assertEquals(“IV”, IntegerToRoman.convert(4));
     }
 
     @Test
-    void testConvertQuattro() {
-        int input = 4;
-        
-        String result = IntegerToRoman.convert(input);
-        
-        assertEquals("IV", result);
+    void test9() {
+        assertEquals(“IX”, IntegerToRoman.convert(9));
     }
 
     @Test
-    void testConvertSei() {
-        int input = 6;
-        
-        String result = IntegerToRoman.convert(input);
-        
-        assertEquals("VI", result);
+    void test10() {
+        assertEquals(“X”, IntegerToRoman.convert(10));
     }
 
     @Test
-    void testConvertSette() {
-        int input = 7;
-        
-        String result = IntegerToRoman.convert(input);
-        
-        assertEquals("VII", result);
+    void test20() {
+        assertEquals(“XX”, IntegerToRoman.convert(20));
     }
 
     @Test
-    void testConvertNove() {
-        int input = 9;
-        
-        String result = IntegerToRoman.convert(input);
-        
-        assertEquals("IX", result);
+    void test50() {
+        assertEquals(“L”, IntegerToRoman.convert(50));
     }
 
     @Test
-    void testConvertDieci() {
-        int input = 10;
-        
-        String result = IntegerToRoman.convert(input);
-        
-        assertEquals("X", result);
+    void test100() {
+        assertEquals(“C”, IntegerToRoman.convert(100));
+    }
+
+    @Test
+    void test500() {
+        assertEquals(“D”, IntegerToRoman.convert(500));
+    }
+
+    @Test
+    void test1000() {
+        assertEquals(“M”, IntegerToRoman.convert(1000));
     }
 }
