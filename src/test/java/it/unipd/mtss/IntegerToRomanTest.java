@@ -71,4 +71,35 @@ public class IntegerToRomanTest {
         
         assertEquals("X", result);
     }
+
+    @Test
+    void testConvertDieci() {
+        int input = 14;
+        
+        String result = IntegerToRoman.convert(input);
+        
+        assertEquals("XIV", result);
+    }
+
+    
+    @Test
+    void testConvertDieci() {
+        int input = 19;
+        
+        String result = IntegerToRoman.convert(input);
+        
+        assertEquals("XIX", result);
+    }
+
+    
+    @Test
+    void testConvertDieci() {
+        int input = 20;
+        
+        String result = IntegerToRoman.convert(input);
+        
+        assertEquals("XX", result);
+    }
+
+    
 }
