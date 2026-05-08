@@ -8,6 +8,96 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.Test;
 
 public class IntegerToRomanTest {
+
+    @Test
+void testConvertUno() {
+    int input = 1;
+
+    String result = IntegerToRoman.convert(input);
+
+    assertEquals("I", result);
+}
+
+@Test
+void testConvertDue() {
+    int input = 2;
+
+    String result = IntegerToRoman.convert(input);
+
+    assertEquals("II", result);
+}
+
+@Test
+void testConvertTre() {
+    int input = 3;
+
+    String result = IntegerToRoman.convert(input);
+
+    assertEquals("III", result);
+}
+
+@Test
+void testConvertQuattro() {
+    int input = 4;
+
+    String result = IntegerToRoman.convert(input);
+
+    assertEquals("IV", result);
+}
+
+@Test
+void testConvertCinque() {
+    int input = 5;
+
+    String result = IntegerToRoman.convert(input);
+
+    assertEquals("V", result);
+}
+
+@Test
+void testConvertSei() {
+    int input = 6;
+
+    String result = IntegerToRoman.convert(input);
+
+    assertEquals("VI", result);
+}
+
+@Test
+void testConvertSette() {
+    int input = 7;
+
+    String result = IntegerToRoman.convert(input);
+
+    assertEquals("VII", result);
+}
+
+@Test
+void testConvertOtto() {
+    int input = 8;
+
+    String result = IntegerToRoman.convert(input);
+
+    assertEquals("VIII", result);
+}
+
+@Test
+void testConvertNove() {
+    int input = 9;
+
+    String result = IntegerToRoman.convert(input);
+
+    assertEquals("IX", result);
+}
+
+@Test
+void testConvertDieci() {
+    int input = 10;
+
+    String result = IntegerToRoman.convert(input);
+
+    assertEquals("X", result);
+}
     
     @Test
     void testConvertUndici() {
