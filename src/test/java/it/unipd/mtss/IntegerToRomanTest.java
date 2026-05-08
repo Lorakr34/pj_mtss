@@ -2,26 +2,33 @@
 // Carol Gardin 2147962
 // Monika Ullah 2116413
 ////////////////////////////////////////////////////////////////////
-@Test
-void testConvertUndici() {
+package it.unipd.mtss;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import org.junit.jupiter.api.Test;
+
+public class IntegerToRomanTest {
+    
+    @Test
+    void testConvertUndici() {
     int input = 11;
     
     String result = IntegerToRoman.convert(input);
     
     assertEquals("XI", result);
-}
+    }
 
-@Test
-void testConvertDodici() {
+    @Test
+    void testConvertDodici() {
     int input = 12;
     
     String result = IntegerToRoman.convert(input);
     
     assertEquals("XII", result);
-}
+    }
 
-@Test
-void testConvertTredici() {
+    @Test
+    void testConvertTredici() {
     int input = 13;
     
     String result = IntegerToRoman.convert(input);
@@ -315,4 +322,5 @@ void testConvertQuarantacinque() {
     String result = IntegerToRoman.convert(input);
     
     assertEquals("XLV", result);
+}
 }
