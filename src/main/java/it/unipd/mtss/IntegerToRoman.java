@@ -14,7 +14,7 @@ public class IntegerToRoman {
 
         int[] values = {50, 40, 10, 9, 5, 4, 1};
 
-        String[] symbols = {“L”, “XL”, “X”, “IX”, “V”, “IV”, “I”};
+        String[] symbols = {"L", "XL", "X", "IX", "V", "IV", "I"};
 
         StringBuilder roman = new StringBuilder();
 
